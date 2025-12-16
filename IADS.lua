@@ -160,7 +160,9 @@ local function associateSAMS()
 end
 
 local function magnumHide(site)
-  if site.Type == "Tor 9A331" then
+  --if site.Type == "Tor 9A331" then
+  --if site.Type == "Tor 9A331" or site.Type == "CHAP_TorM2" then
+  if site.Type == "Tor 9A331" or site.Type == "CHAP_TorM2" or site.Type == "CHAP_PantsirS1" then
   elseif not site.Hidden then
     local randomTime = math.random(15,35)
     toHide[site.Name] = randomTime
@@ -605,4 +607,5 @@ if(IADSEnable) then
   --     timer.getTime()+12
   --   )
 end
+
 
