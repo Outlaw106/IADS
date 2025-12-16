@@ -1,18 +1,27 @@
 local SAMRangeLookupTable = { -- Ranges at which SAM sites are considered close enough to activate in m
-    ["Kub 1S91 str"] = 52000,
-    ["S-300PS 40B6M tr"] =  100000,
-    ["Osa 9A33 ln"] = 25000,
-    ["snr s-125 tr"] = 60000,
-    ["SNR_75V"] = 65000,
-    ["Dog Ear radar"] = 26000,
-    ["SA-11 Buk LN 9A310M1"] = 43000,
-    ["Hawk tr"] = 60000,
-    ["Tor 9A331"] = 50000,
-    ["rapier_fsa_blindfire_radar"] = 6000,
-    ["Patriot STR"] = 100000,
-    ["Roland ADS"] = 10000,
-    ["HQ-7_STR_SP"] = 12500,
-	["RPC_5N62V"] = 120000,
+  ["Kub 1S91 str"] = 52000,
+  ["S-300PS 40B6M tr"] =  100000,
+  ["S-300VM 9S32ME tr"] = 124000,  -- HDS SA-23 | S-300VM in use since 2013
+  ["S-300PMU1 40B6M tr"] = 104600,  -- HDS SA-20A Tombstone Mast TR
+  ["S-300PMU2 92H6E tr"] = 233400,   -- HDS SA-20B Grave Stone TR (truck)
+  ["S-400 92N6E tr"] = 347600,  -- HDS SA-21 Grave Stone TR (truck)
+  ["CH_S350_50N6"] = 177000,  -- CurrentHill S-350
+  ["Osa 9A33 ln"] = 25000,
+  ["snr s-125 tr"] = 60000,
+  ["SNR_75V"] = 65000,
+  ["Dog Ear radar"] = 26000,
+  ["SA-11 Buk LN 9A310M1"] = 43000,
+  ["Hawk tr"] = 60000,
+  ["Tor 9A331"] = 50000,
+  ["rapier_fsa_blindfire_radar"] = 6000,
+  ["Patriot STR"] = 100000,
+  ["Roland ADS"] = 10000,
+  ["HQ-7_STR_SP"] = 12500,
+  ["RPC_5N62V"] = 120000,
+  ["CH_BukM3_9S36M"] = 105000,
+  ["Pantsir_SM"] = 48000,  -- HDS Pantsir SA-22
+  ["CHAP_TorM2"] = 50000,
+  ["CHAP_PantsirS1"] = 48000,  -- SA-22 Greyhound
 }
 local IADSEnable = true -- If true IADS script is active
 local IADSRadioDetection = false -- 1 = radio detection of ARM launch on, 0 = radio detection of ARM launch off
@@ -596,3 +605,4 @@ if(IADSEnable) then
   --     timer.getTime()+12
   --   )
 end
+
