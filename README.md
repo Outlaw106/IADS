@@ -13,7 +13,7 @@
  
  HARMs and other ARMs detected by EWRs and SAMs have a chance of causing defensive behaviour in the SAM sites
  
- TORs remain on
+ TORs and Pantsir's will remain on
  
 ### Mission Designer tips:
  Don't mix EWR and SAM sites in one group
